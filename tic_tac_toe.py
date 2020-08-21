@@ -42,8 +42,6 @@ def print_Update_Whiteboard(my_List):
 
 ### according to user input to change the nested list element value which will gets reflected to game board
 def change_Whiteboard(num, value, my_List):
-    print(list_Transfer(num))
-    print(num_Transfer(num))
     my_List[list_Transfer(num)][num_Transfer(num)] = value
     return my_List
 

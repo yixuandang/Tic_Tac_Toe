@@ -31,8 +31,7 @@ Please choose a value represent your player(choose from 'x' or 'o' only): o
 GAME START!!!
 Player1 it is your turn to choose a position: 
 Please choose a position you want to place(1-9): 1
-2
-1
+
    |   |   
    |   |   
 ___|___|___
@@ -45,8 +44,7 @@ ___|___|___
 
 Player2 it is your turn to choose a position: 
 Please choose a position you want to place(1-9): 2
-2
-5
+
    |   |   
    |   |   
 ___|___|___
@@ -59,8 +57,7 @@ ___|___|___
 
 Player1 it is your turn to choose a position: 
 Please choose a position you want to place(1-9): 3
-2
-9
+
    |   |   
    |   |   
 ___|___|___
@@ -73,8 +70,7 @@ ___|___|___
 
 Player2 it is your turn to choose a position: 
 Please choose a position you want to place(1-9): 4
-1
-1
+
    |   |   
    |   |   
 ___|___|___
@@ -87,8 +83,7 @@ ___|___|___
 
 Player1 it is your turn to choose a position: 
 Please choose a position you want to place(1-9): 5
-1
-5
+
    |   |   
    |   |   
 ___|___|___
@@ -101,8 +96,7 @@ ___|___|___
 
 Player2 it is your turn to choose a position: 
 Please choose a position you want to place(1-9): 6
-1
-9
+
    |   |   
    |   |   
 ___|___|___
@@ -115,8 +109,7 @@ ___|___|___
 
 Player1 it is your turn to choose a position: 
 Please choose a position you want to place(1-9): 7
-0
-1
+
    |   |   
  x |   |   
 ___|___|___

@@ -1,5 +1,6 @@
 import random
 
+### reset game board to empty
 def reset_Whiteboard(my_List):
     my_List = [ [] ] * 3
     my_List[0] = [" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " ", "\n"]
@@ -7,6 +8,7 @@ def reset_Whiteboard(my_List):
     my_List[2]= [" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " ", "\n"]
     return my_List
 
+### display the location user can choose in game board
 def initial_Whiteboard(my_List):
     my_List = [ [] ] * 3
     my_List[0] = [" ", "7", " ", "|", " ", "8", " ", "|", " ", "9", " ", "\n"]
@@ -14,6 +16,7 @@ def initial_Whiteboard(my_List):
     my_List[2] = [" ", "1", " ", "|", " ", "2", " ", "|", " ", "3", " ", "\n"]
     return my_List
 
+### transfer user input location to nested list column
 def num_Transfer(num):
     if num in [1,4,7]:
         return 1
@@ -22,6 +25,7 @@ def num_Transfer(num):
     else:
         return 9
 
+### transfer user input location to nested list row
 def list_Transfer(num):
     if num <= 3:
         return 2
@@ -30,17 +34,20 @@ def list_Transfer(num):
     else:
         return 0
 
+### print updated game board so that user knows where the game at
 def print_Update_Whiteboard(my_List):
     mystring1 = "   |   |   \n"
     mystring2 = "___|___|___\n"
     print(mystring1 + "".join(my_List[0]) + mystring2 + mystring1 + "".join(my_List[1]) + mystring2 + mystring1 + "".join(my_List[2]) +mystring1)
 
+### according to user input to change the nested list element value which will gets reflected to game board
 def change_Whiteboard(num, value, my_List):
     print(list_Transfer(num))
     print(num_Transfer(num))
     my_List[list_Transfer(num)][num_Transfer(num)] = value
     return my_List
 
+### check if we have a winner when the game proceed
 def check_Winner(value, my_List):
     if my_List[0][1] == my_List[1][5] == my_List[2][9] == value:
         return value
@@ -84,6 +91,7 @@ def check_Winner(value, my_List):
             return value          
     return ('None')
 
+### check if it is a tie game
 def even_Check(my_List):
     count = 0
     for i in range (0,3):
@@ -96,6 +104,7 @@ def even_Check(my_List):
     else:
         return False
 
+### determine the winner which will be used in the main function
 def determine_Winner(value, my_List):
     if check_Winner(value, my_List) == value:
         print ("Player who plays {} is the WINNER!!!".format(value))
@@ -103,6 +112,7 @@ def determine_Winner(value, my_List):
     else:
         return False
 
+### validate user input for characters
 def check_Value(x):
     
     value = 'invalid'
@@ -120,6 +130,7 @@ def check_Value(x):
     
     return value
 
+### double check with the user whether she or he wants to continue/replay the game
 def game_Continue():
     
     game = 'invalid'
@@ -134,6 +145,7 @@ def game_Continue():
     
     return game
 
+### generate a random number which represent which user will go first
 def choose_first():
     
     if random.randint(0,1) == 0:
@@ -141,6 +153,7 @@ def choose_first():
     else:
         return 'Player 1'
 
+### main function for this tic tac toe game
 def tic_Tac_Toe():
     # Initial part
     print ("Welcome to the game: TIC TAC TOE !!!")

@@ -12,7 +12,7 @@ Here are the requirements:
 
 Welcome to the game: TIC TAC TOE !!!
 Here is the game board you gonna play:  
-&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;     
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;     
 &nbsp;7&nbsp;|&nbsp;8&nbsp;|&nbsp;9&nbsp;   
 ___|___|___  
    |   |     
